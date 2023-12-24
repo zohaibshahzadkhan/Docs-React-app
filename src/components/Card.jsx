@@ -5,25 +5,16 @@ import { IoClose } from "react-icons/io5";
 import { motion } from 'framer-motion'
 
 
-const colors = {
-    green: 'green',
-    blue: 'blue',
-    orange: 'orange'
-}
-
 const bgColors = {
-    bgGreen: 'bg-green-600',
-    bgBlue: 'bg-blue-600',
-    bgOrange: 'bg-orange-600'
+    BG_GREEN: 'bg-green-600',
+    BG_BLUE: 'bg-blue-600',
+    BG_ORANGE: 'bg-orange-600'
 }
 
 function getColor(color) {
-    if (color === colors.green) return bgColors.bgGreen
-    else if (color === colors.blue) return bgColors.bgBlue
-    else if (color === colors.orange) return bgColors.bgOrange
-
-
-
+    if (color === 'green') return bgColors.BG_GREEN
+    else if (color === 'blue') return bgColors.BG_BLUE
+    else if (color === 'orange') return bgColors.BG_ORANGE
 }
 
 function Card({ data, reference }) {
